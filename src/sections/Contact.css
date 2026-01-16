@@ -1,0 +1,116 @@
+.contact {
+    background-color: var(--white);
+}
+
+.contact-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    margin-top: 50px;
+    margin-bottom: 60px;
+}
+
+.contact-info {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 25px;
+}
+
+.info-card {
+    background-color: var(--light-grey);
+    padding: 25px;
+    border-radius: 8px;
+    border-left: 4px solid var(--accent-gold);
+    transition: all 0.3s ease;
+}
+
+.info-card:hover {
+    transform: translateX(5px);
+    box-shadow: 0 4px 12px rgba(0, 51, 102, 0.1);
+}
+
+.info-icon {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.info-card h3 {
+    font-size: 1.2rem;
+    color: var(--primary-blue);
+    margin-bottom: 8px;
+}
+
+.info-text {
+    font-size: 1rem;
+    color: var(--text-dark);
+    line-height: 1.6;
+    margin: 0;
+}
+
+.contact-link {
+    color: var(--primary-blue);
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.contact-link:hover {
+    color: var(--accent-gold);
+    text-decoration: underline;
+}
+
+.contact-actions {
+    background: linear-gradient(135deg, var(--primary-blue) 0%, var(--primary-dark-blue) 100%);
+    padding: 40px;
+    border-radius: 10px;
+    color: var(--white);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.actions-title {
+    font-size: 1.8rem;
+    color: var(--white);
+    margin-bottom: 15px;
+}
+
+.actions-description {
+    color: rgba(255, 255, 255, 0.9);
+    margin-bottom: 30px;
+    font-size: 1.05rem;
+}
+
+.action-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.map-container {
+    margin-top: 40px;
+}
+
+.map-title {
+    font-size: 1.8rem;
+    color: var(--primary-blue);
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.map-wrapper {
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 968px) {
+    .contact-content {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .contact-actions {
+        padding: 30px;
+    }
+}

@@ -1,0 +1,112 @@
+.about {
+    background-color: var(--white);
+}
+
+.section-title {
+    text-align: center;
+    font-size: 2.5rem;
+    color: var(--primary-blue);
+    margin-bottom: 15px;
+}
+
+.section-subtitle {
+    text-align: center;
+    font-size: 1.1rem;
+    color: var(--text-light);
+    margin-bottom: 50px;
+}
+
+.about-content {
+    max-width: 900px;
+    margin: 0 auto 60px;
+}
+
+.about-text {
+    font-size: 1.05rem;
+    line-height: 1.8;
+    color: var(--text-dark);
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.about-text strong {
+    color: var(--primary-blue);
+    font-weight: 600;
+}
+
+.vision-mission {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+    margin-top: 50px;
+}
+
+.vm-card {
+    background: linear-gradient(135deg, var(--light-grey) 0%, var(--white) 100%);
+    padding: 40px;
+    border-radius: 10px;
+    text-align: center;
+    border: 2px solid var(--medium-grey);
+    transition: all 0.3s ease;
+}
+
+.vm-card:hover {
+    border-color: var(--accent-gold);
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0, 51, 102, 0.1);
+}
+
+.vm-icon {
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+}
+
+.vm-card h3 {
+    font-size: 1.6rem;
+    color: var(--primary-blue);
+    margin-bottom: 20px;
+}
+
+.vm-card p {
+    font-size: 1rem;
+    color: var(--text-light);
+    line-height: 1.8;
+}
+
+.mission-list {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+}
+
+.mission-list li {
+    position: relative;
+    padding-left: 30px;
+    margin-bottom: 15px;
+    color: var(--text-light);
+    line-height: 1.6;
+}
+
+.mission-list li::before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    color: var(--accent-gold);
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+@media (max-width: 768px) {
+    .section-title {
+        font-size: 2rem;
+    }
+
+    .vision-mission {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .vm-card {
+        padding: 30px;
+    }
+}
