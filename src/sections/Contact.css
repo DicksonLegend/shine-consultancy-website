@@ -1,49 +1,51 @@
 .contact {
     background-color: var(--white);
+    padding: 60px 0;
 }
 
 .contact-content {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 50px;
-    margin-top: 50px;
-    margin-bottom: 60px;
+    grid-template-columns: 1.2fr 1fr;
+    gap: 40px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    align-items: start;
 }
 
 .contact-info {
     display: grid;
-    grid-template-columns: 1fr;
-    gap: 25px;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
 }
 
 .info-card {
     background-color: var(--light-grey);
-    padding: 25px;
+    padding: 18px 20px;
     border-radius: 8px;
-    border-left: 4px solid var(--accent-gold);
+    border-left: 3px solid var(--accent-gold);
     transition: all 0.3s ease;
 }
 
 .info-card:hover {
-    transform: translateX(5px);
-    box-shadow: 0 4px 12px rgba(0, 51, 102, 0.1);
+    transform: translateX(3px);
+    box-shadow: 0 3px 10px rgba(0, 51, 102, 0.1);
 }
 
 .info-icon {
-    font-size: 2.5rem;
-    margin-bottom: 10px;
-}
-
-.info-card h3 {
-    font-size: 1.2rem;
-    color: var(--primary-blue);
+    font-size: 1.8rem;
     margin-bottom: 8px;
 }
 
-.info-text {
+.info-card h3 {
     font-size: 1rem;
+    color: var(--primary-blue);
+    margin-bottom: 5px;
+}
+
+.info-text {
+    font-size: 0.9rem;
     color: var(--text-dark);
-    line-height: 1.6;
+    line-height: 1.5;
     margin: 0;
 }
 
@@ -61,7 +63,7 @@
 
 .contact-actions {
     background: linear-gradient(135deg, var(--primary-blue) 0%, var(--primary-dark-blue) 100%);
-    padding: 40px;
+    padding: 30px;
     border-radius: 10px;
     color: var(--white);
     display: flex;
@@ -70,47 +72,57 @@
 }
 
 .actions-title {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     color: var(--white);
-    margin-bottom: 15px;
+    margin-bottom: 10px;
 }
 
 .actions-description {
     color: rgba(255, 255, 255, 0.9);
-    margin-bottom: 30px;
-    font-size: 1.05rem;
+    margin-bottom: 25px;
+    font-size: 0.95rem;
 }
 
 .action-buttons {
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: 12px;
 }
 
 .map-container {
-    margin-top: 40px;
+    margin-top: 30px;
 }
 
 .map-title {
-    font-size: 1.8rem;
+    font-size: 1.4rem;
     color: var(--primary-blue);
-    margin-bottom: 25px;
+    margin-bottom: 20px;
     text-align: center;
 }
 
 .map-wrapper {
     border-radius: 10px;
     overflow: hidden;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
 }
 
 @media (max-width: 968px) {
     .contact-content {
         grid-template-columns: 1fr;
-        gap: 30px;
+        gap: 25px;
+    }
+
+    .contact-info {
+        grid-template-columns: 1fr 1fr;
     }
 
     .contact-actions {
-        padding: 30px;
+        padding: 25px;
+    }
+}
+
+@media (max-width: 600px) {
+    .contact-info {
+        grid-template-columns: 1fr;
     }
 }

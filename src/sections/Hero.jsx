@@ -43,27 +43,6 @@ const Hero = () => {
                         Professional service provider specializing in manpower supply, electrical services, and complete facility maintenance for <strong>MNCs, corporate offices, and industrial establishments</strong>.
                     </p>
 
-                    {/* Statistics Section */}
-                    <div className="hero-stats">
-                        <div className="stat-item">
-                            <div className="stat-icon">✅</div>
-                            <div className="stat-number">24/7</div>
-                            <div className="stat-label">Available</div>
-                        </div>
-                        <div className="stat-divider"></div>
-                        <div className="stat-item">
-                            <div className="stat-icon">🏆</div>
-                            <div className="stat-number">100+</div>
-                            <div className="stat-label">Projects</div>
-                        </div>
-                        <div className="stat-divider"></div>
-                        <div className="stat-item">
-                            <div className="stat-icon">⚡</div>
-                            <div className="stat-number">6</div>
-                            <div className="stat-label">Core Services</div>
-                        </div>
-                    </div>
-
                     {/* CTA Buttons */}
                     <div className="cta-buttons">
                         <Button
