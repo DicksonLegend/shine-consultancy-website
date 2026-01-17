@@ -7,6 +7,7 @@ const Hero = () => {
     const phoneNumber = '+919976363114';
     const whatsappMessage = 'Hello, I would like to inquire about your services.';
     const [isScrolled, setIsScrolled] = useState(false);
+    const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
     // Handle navbar scroll effect
     useEffect(() => {
@@ -35,13 +36,13 @@ const Hero = () => {
                         <span className="nav-logo-text">SHINE CONSULTANCY</span>
                     </div>
 
-                    <ul className="nav-links">
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#services">Services</a></li>
-                        <li><a href="#why-choose-us">Why Us</a></li>
-                        <li><a href="#careers">Careers</a></li>
-                        <li><a href="#contact">Contact</a></li>
+                    <ul className={`nav-links ${isMobileMenuOpen ? 'active' : ''}`}>
+                        <li><a href="#home" onClick={() => setIsMobileMenuOpen(false)}>Home</a></li>
+                        <li><a href="#about" onClick={() => setIsMobileMenuOpen(false)}>About</a></li>
+                        <li><a href="#services" onClick={() => setIsMobileMenuOpen(false)}>Services</a></li>
+                        <li><a href="#why-choose-us" onClick={() => setIsMobileMenuOpen(false)}>Why Us</a></li>
+                        <li><a href="#careers" onClick={() => setIsMobileMenuOpen(false)}>Careers</a></li>
+                        <li><a href="#contact" onClick={() => setIsMobileMenuOpen(false)}>Contact</a></li>
                     </ul>
 
                     <div className="nav-buttons">
@@ -59,8 +60,14 @@ const Hero = () => {
                     </div>
 
                     {/* Mobile Menu Button */}
-                    <button className="mobile-menu-btn" onClick={() => document.querySelector('.nav-links').classList.toggle('active')}>
-                        ☰
+                    <button
+                        className={`mobile-menu-btn ${isMobileMenuOpen ? 'active' : ''}`}
+                        onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+                        aria-label="Toggle menu"
+                    >
+                        <span className="hamburger-line"></span>
+                        <span className="hamburger-line"></span>
+                        <span className="hamburger-line"></span>
                     </button>
                 </div>
             </nav>
