@@ -45,22 +45,6 @@
     color: var(--primary-blue);
 }
 
-/* Mobile menu in scrolled state - maintain dark background for readability */
-.navbar-scrolled .nav-links {
-    background: rgba(0, 26, 51, 0.95);
-    backdrop-filter: blur(20px);
-    -webkit-backdrop-filter: blur(20px);
-}
-
-.navbar-scrolled .nav-links a {
-    color: rgba(255, 255, 255, 0.9);
-}
-
-.navbar-scrolled .nav-links a:hover {
-    color: var(--accent-gold);
-    background: rgba(212, 175, 55, 0.15);
-}
-
 .navbar-container {
     display: flex;
     align-items: center;
@@ -565,6 +549,22 @@
 
     .mobile-menu-btn {
         display: flex;
+    }
+
+    /* Mobile menu in scrolled state - maintain dark background for readability */
+    .navbar-scrolled .nav-links {
+        background: rgba(0, 26, 51, 0.95);
+        backdrop-filter: blur(20px);
+        -webkit-backdrop-filter: blur(20px);
+    }
+
+    .navbar-scrolled .nav-links a {
+        color: rgba(255, 255, 255, 0.9);
+    }
+
+    .navbar-scrolled .nav-links a:hover {
+        color: var(--accent-gold);
+        background: rgba(212, 175, 55, 0.15);
     }
 
     .hero-grid {
