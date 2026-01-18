@@ -3,9 +3,9 @@ import './Contact.css';
 
 const Contact = () => {
     const contactInfo = {
-        address: 'PO NO.1, A I B E A NAGAR, 4th STREET, A COLONY, PARAVAI, MADURAI',
+        address: 'SF No.588/1, A2C, No.2, Thiru Nagar, Andhivadi, HOSUR - 635 110, TN',
         phone: '+919976363114',
-        email: 'ShineConsultancy@gmail.com'
+        email: 'shineconsultancy114@gmail.com'
     };
 
     const whatsappMessage = 'Hello, I would like to inquire about your services.';
@@ -91,7 +91,7 @@ const Contact = () => {
                     <h3 className="map-title">Our Location</h3>
                     <div className="map-wrapper">
                         <iframe
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3930.3045678901234!2d78.0!3d9.9!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zOcKwNTQnMDAuMCJOIDc4wrAwMCcwMC4wIkU!5e0!3m2!1sen!2sin!4v1234567890"
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3890.1234567890123!2d77.8252!3d12.7409!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae70050e5d44d5%3A0x4d13c4e2bce0f10d!2sThiru%20Nagar%2C%20Hosur%2C%20Tamil%20Nadu%20635110!5e0!3m2!1sen!2sin!4v1705564173000"
                             width="100%"
                             height="280"
                             style={{ border: 0 }}

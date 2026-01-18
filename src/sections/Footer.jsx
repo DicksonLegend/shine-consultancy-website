@@ -29,9 +29,9 @@ const Footer = () => {
                     <div className="footer-section">
                         <h4 className="footer-heading">Contact Information</h4>
                         <ul className="footer-list">
-                            <li>📍 Madurai, Tamil Nadu</li>
+                            <li>📍 Hosur, Tamil Nadu - 635 110</li>
                             <li>📞 +919976363114</li>
-                            <li>✉️ ShineConsultancy@gmail.com</li>
+                            <li>✉️ shineconsultancy114@gmail.com</li>
                         </ul>
                     </div>
                 </div>

@@ -89,6 +89,17 @@
     gap: 12px;
 }
 
+/* Fix for outline button visibility on dark background */
+.contact-actions .btn-outline {
+    border-color: var(--white);
+    color: var(--white);
+}
+
+.contact-actions .btn-outline:hover {
+    background-color: var(--white);
+    color: var(--primary-blue);
+}
+
 .map-container {
     margin-top: 30px;
 }
