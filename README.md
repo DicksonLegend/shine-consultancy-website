@@ -1,106 +1,26 @@
 # Shine Consultancy Website
 
-A professional, responsive website built with **React JS** for **Shine Consultancy** — a trusted manpower supply and facility management service provider based in Hosur, Tamil Nadu.
+A professional, responsive static website built using React JS for **Shine Consultancy**, a manpower supply and facility management service provider.
 
-The website is designed to present company services clearly to corporate clients and provide seamless contact options for both clients and job seekers.
+The website presents company services clearly for corporate clients and provides easy contact options for both clients and job seekers.
 
----
+## Features
+- Corporate and professional UI
+- Fully responsive design
+- Service showcase for manpower and facility management
+- Call and WhatsApp-based contact flow
+- Careers section for job seekers
+- No backend or database dependency
 
-## ✨ Features
+## Tech Stack
+- React JS
+- Vite
+- HTML5
+- CSS3
+- JavaScript
 
-- 🎨 **Corporate & Professional UI** — Modern design with premium aesthetics
-- 📱 **Fully Responsive** — Optimized for desktop, tablet, and mobile devices
-- 🛠️ **Service Showcase** — Comprehensive display of manpower and facility management services
-- 💬 **Quick Contact Options** — WhatsApp, call, and email integration for instant communication
-- 👥 **Careers Section** — Dedicated section for job seekers to explore opportunities
-- ⚡ **Fast & Lightweight** — No backend or database dependency, pure static website
+## Live Site
+https://shine-consultancy.netlify.app/
 
----
-
-## 🛠️ Tech Stack
-
-| Technology | Purpose |
-|------------|---------|
-| React JS | Frontend Framework |
-| Vite | Build Tool & Dev Server |
-| HTML5 | Structure |
-| CSS3 | Styling & Animations |
-| JavaScript | Interactivity |
-
----
-
-## 🚀 Live Demo
-
-🔗 **[https://shine-consultancy.netlify.app/](https://shine-consultancy.netlify.app/)**
-
----
-
-## 📦 Getting Started
-
-### Prerequisites
-- Node.js (v16 or higher)
-- npm or yarn
-
-### Installation
-
-```bash
-# Clone the repository
-git clone https://github.com/yourusername/shine-consultancy-website.git
-
-# Navigate to project directory
-cd shine-consultancy-website
-
-# Install dependencies
-npm install
-
-# Start development server
-npm run dev
-```
-
-The app will be available at `http://localhost:5173`
-
-### Build for Production
-
-```bash
-npm run build
-```
-
----
-
-## 📁 Project Structure
-
-```
-shine-consultancy-website/
-├── public/
-│   └── assets/
-├── src/
-│   ├── components/
-│   ├── sections/
-│   ├── App.jsx
-│   └── main.jsx
-├── index.html
-└── package.json
-```
-
----
-
-## 📋 Project Type
-
-**Real-time Industry Project** — Developed to establish a professional online presence for Shine Consultancy, enabling the business to showcase services and connect with potential corporate clients and job seekers.
-
----
-
-## 👤 Client
-
-**Shine Consultancy**  
-Proprietor: Mr. Antony Babu  
-📍 Hosur, Tamil Nadu - 635 110  
-📞 +91 99763 63114  
-✉️ shineconsultancy114@gmail.com
-
----
-
-## 📄 License
-
-This project is proprietary and developed for Shine Consultancy.
-
+## Project Type
+Real-time industry project developed to establish an online presence for a consultancy business.
