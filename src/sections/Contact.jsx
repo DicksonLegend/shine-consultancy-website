@@ -1,9 +1,10 @@
+import { User, MapPin, Phone, Mail, MessageCircle } from 'lucide-react';
 import Button from '../components/Button';
 import './Contact.css';
 
 const Contact = () => {
     const contactInfo = {
-        address: 'SF No.588/1, A2C, No.2, Thiru Nagar, Andhivadi, HOSUR - 635 110, TN',
+        address: 'SF No.588/1, A2C, No.2, Thiru Nagar, Andhivadi, Mathigiri, HOSUR - 635 110, TN',
         phone: '+919976363114',
         email: 'shineconsultancy114@gmail.com'
     };
@@ -21,19 +22,19 @@ const Contact = () => {
                 <div className="contact-content">
                     <div className="contact-info">
                         <div className="info-card">
-                            <div className="info-icon">👤</div>
+                            <div className="info-icon"><User size={24} /></div>
                             <h3>Proprietor</h3>
                             <p className="info-text">Mr. Antony Babu</p>
                         </div>
 
                         <div className="info-card">
-                            <div className="info-icon">📍</div>
+                            <div className="info-icon"><MapPin size={24} /></div>
                             <h3>Address</h3>
                             <p className="info-text">{contactInfo.address}</p>
                         </div>
 
                         <div className="info-card">
-                            <div className="info-icon">📞</div>
+                            <div className="info-icon"><Phone size={24} /></div>
                             <h3>Phone</h3>
                             <p className="info-text">
                                 <a href={`tel:${contactInfo.phone}`} className="contact-link">
@@ -43,7 +44,7 @@ const Contact = () => {
                         </div>
 
                         <div className="info-card">
-                            <div className="info-icon">✉️</div>
+                            <div className="info-icon"><Mail size={24} /></div>
                             <h3>Email</h3>
                             <p className="info-text">
                                 <a href={`mailto:${contactInfo.email}`} className="contact-link">
@@ -63,7 +64,7 @@ const Contact = () => {
                             <Button
                                 variant="primary"
                                 href={`tel:${contactInfo.phone}`}
-                                icon="📞"
+                                icon={<Phone size={18} />}
                             >
                                 Call Now
                             </Button>
@@ -71,7 +72,7 @@ const Contact = () => {
                             <Button
                                 variant="whatsapp"
                                 href={`https://wa.me/${contactInfo.phone.replace(/\+/g, '')}?text=${encodeURIComponent(whatsappMessage)}`}
-                                icon="💬"
+                                icon={<MessageCircle size={18} />}
                             >
                                 WhatsApp Us
                             </Button>
@@ -79,7 +80,7 @@ const Contact = () => {
                             <Button
                                 variant="outline"
                                 href={`mailto:${contactInfo.email}`}
-                                icon="✉️"
+                                icon={<Mail size={18} />}
                             >
                                 Send Email
                             </Button>

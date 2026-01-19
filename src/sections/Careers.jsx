@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { Briefcase, MessageCircle } from 'lucide-react';
 import Button from '../components/Button';
 import './Careers.css';
 
@@ -34,7 +35,7 @@ const Careers = () => {
 
                 <div className="careers-content">
                     <div className="careers-info">
-                        <div className="info-icon">💼</div>
+                        <div className="info-icon"><Briefcase size={32} /></div>
                         <h3>Looking for Work?</h3>
                         <p>
                             We are always looking for skilled technicians, electricians, painters, plumbers, carpenters, and general workers to join our manpower team. If you have experience and are looking for stable work opportunities with corporate clients, we'd love to hear from you.
@@ -102,7 +103,7 @@ const Careers = () => {
                             <Button
                                 variant="whatsapp"
                                 onClick={handleWhatsAppApply}
-                                icon="💬"
+                                icon={<MessageCircle size={18} />}
                             >
                                 Apply via WhatsApp
                             </Button>

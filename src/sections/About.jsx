@@ -1,3 +1,4 @@
+import { Target, Rocket } from 'lucide-react';
 import './About.css';
 
 const About = () => {
@@ -20,7 +21,7 @@ const About = () => {
 
                 <div className="vision-mission">
                     <div className="vm-card">
-                        <div className="vm-icon">🎯</div>
+                        <div className="vm-icon"><Target size={32} /></div>
                         <h3>Our Vision</h3>
                         <p>
                             To be the most trusted and preferred service partner for corporate and industrial clients, providing reliable, efficient, and sustainable facility and maintenance solutions.
@@ -28,7 +29,7 @@ const About = () => {
                     </div>
 
                     <div className="vm-card">
-                        <div className="vm-icon">🚀</div>
+                        <div className="vm-icon"><Rocket size={32} /></div>
                         <h3>Our Mission</h3>
                         <ul className="mission-list">
                             <li>To deliver high-quality services through skilled manpower and technical expertise</li>

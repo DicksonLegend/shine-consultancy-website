@@ -1,3 +1,4 @@
+import { MapPin, Phone, Mail } from 'lucide-react';
 import './Footer.css';
 
 const Footer = () => {
@@ -28,10 +29,10 @@ const Footer = () => {
 
                     <div className="footer-section">
                         <h4 className="footer-heading">Contact Information</h4>
-                        <ul className="footer-list">
-                            <li>📍 Hosur, Tamil Nadu - 635 110</li>
-                            <li>📞 +919976363114</li>
-                            <li>✉️ shineconsultancy114@gmail.com</li>
+                        <ul className="footer-list footer-contact-list">
+                            <li><MapPin size={16} /> Hosur, Tamil Nadu - 635 110</li>
+                            <li><Phone size={16} /> +919976363114</li>
+                            <li><Mail size={16} /> shineconsultancy114@gmail.com</li>
                         </ul>
                     </div>
                 </div>

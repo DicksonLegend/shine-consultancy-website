@@ -1,34 +1,35 @@
+import { Target, BadgeCheck, ClipboardList, ShieldCheck, Clock, PhoneCall } from 'lucide-react';
 import './WhyChooseUs.css';
 
 const WhyChooseUs = () => {
     const strengths = [
         {
-            icon: '🎯',
+            icon: <Target size={28} />,
             title: 'Single-window Solution',
             description: 'One-stop solution for all facility services'
         },
         {
-            icon: '✅',
+            icon: <BadgeCheck size={28} />,
             title: 'Skilled & Verified Manpower',
             description: 'Experienced workforce and quality supervision'
         },
         {
-            icon: '📋',
+            icon: <ClipboardList size={28} />,
             title: 'Flexible Contracts',
             description: 'Material and labour contracts available'
         },
         {
-            icon: '🛡️',
+            icon: <ShieldCheck size={28} />,
             title: 'Safety & Quality Assurance',
             description: 'Strong emphasis on safety, quality, and accountability'
         },
         {
-            icon: '⏱️',
+            icon: <Clock size={28} />,
             title: 'Timely Project Completion',
             description: 'On-time delivery with assured quality'
         },
         {
-            icon: '📞',
+            icon: <PhoneCall size={28} />,
             title: '24/7 Service Support',
             description: 'Round-the-clock support for urgent requirements'
         }

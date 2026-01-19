@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import { Phone, MessageCircle, ClipboardList, Users, Wrench, FileText } from 'lucide-react';
 import Button from '../components/Button';
 import './Hero.css';
 import logoImg from '../assets/shineconsultancy-logo.png';
@@ -47,7 +48,7 @@ const Hero = () => {
 
                     <div className="nav-buttons">
                         <a href={`tel:${phoneNumber}`} className="nav-btn nav-btn-outline">
-                            📞 Call Now
+                            <Phone size={16} /> Call Now
                         </a>
                         <a
                             href={`https://wa.me/${phoneNumber.replace(/\+/g, '')}?text=${encodeURIComponent(whatsappMessage)}`}
@@ -55,7 +56,7 @@ const Hero = () => {
                             target="_blank"
                             rel="noopener noreferrer"
                         >
-                            💬 WhatsApp
+                            <MessageCircle size={16} /> WhatsApp
                         </a>
                     </div>
 
@@ -91,7 +92,7 @@ const Hero = () => {
 
                             <div className="hero-buttons">
                                 <a href={`tel:${phoneNumber}`} className="hero-btn hero-btn-outline">
-                                    📞 Call Now
+                                    <Phone size={18} /> Call Now
                                 </a>
                                 <a
                                     href={`https://wa.me/${phoneNumber.replace(/\+/g, '')}?text=${encodeURIComponent(whatsappMessage)}`}
@@ -99,7 +100,7 @@ const Hero = () => {
                                     target="_blank"
                                     rel="noopener noreferrer"
                                 >
-                                    💬 WhatsApp Us
+                                    <MessageCircle size={18} /> WhatsApp Us
                                 </a>
                             </div>
                         </div>
@@ -108,18 +109,18 @@ const Hero = () => {
                         <div className="hero-graphic">
                             <div className="graphic-circle">
                                 <div className="graphic-center">
-                                    <span className="center-icon">📋</span>
+                                    <span className="center-icon"><ClipboardList size={32} /></span>
                                 </div>
 
                                 {/* Orbiting Icons */}
                                 <div className="orbit-icon orbit-1">
-                                    <span>👥</span>
+                                    <span><Users size={20} /></span>
                                 </div>
                                 <div className="orbit-icon orbit-2">
-                                    <span>🔧</span>
+                                    <span><Wrench size={20} /></span>
                                 </div>
                                 <div className="orbit-icon orbit-3">
-                                    <span>📄</span>
+                                    <span><FileText size={20} /></span>
                                 </div>
                             </div>
 
